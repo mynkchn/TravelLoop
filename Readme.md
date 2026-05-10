@@ -1,15 +1,14 @@
-Frontend
+# Frontend
 
-  The TravelLoop frontend is a React-based single-page application built with Vite and styled with Tailwind CSS. It provides a complete user interface for
-  all backend features including user authentication, trip management, itinerary planning, budget tracking, packing lists, and travel journaling.
+The TravelLoop frontend is a React-based single-page application built with Vite and styled with Tailwind CSS. It provides a complete user interface for all backend features including user authentication, trip management, itinerary planning, budget tracking, packing lists, and travel journaling.
 
-  Technology Stack
+## Technology Stack
 
-  - React 19
-  - Vite (Build tool)
-  - Tailwind CSS v4 (Styling)
-  - React Router v7 (Routing)
-  - Native Fetch API (HTTP client)
+- React 19
+- Vite (Build tool)
+- Tailwind CSS v4 (Styling)
+- React Router v7 (Routing)
+- Native Fetch API (HTTP client)
 
   Project Structure
 
