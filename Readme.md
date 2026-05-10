@@ -10,98 +10,109 @@ The TravelLoop frontend is a React-based single-page application built with Vite
 - React Router v7 (Routing)
 - Native Fetch API (HTTP client)
 
-  Project Structure
+  ## Project Structure
 
-  frontend/
-  ├── src/
-  │   ├── lib/
-  │   │   └── api.js              # API client with JWT authentication
-  │   ├── hooks/
-  │   │   └── useAuth.js          # Authentication state management
-  │   ├── components/
-  │   │   ├── Navbar.jsx         # Navigation component
-  │   │   ├── Loading.jsx         # Loading spinners and skeleton loaders
-  │   │   └── Toast.jsx           # Toast notification system
-  │   ├── pages/
-  │   │   ├── Home.jsx            # Landing page
-  │   │   ├── Login.jsx           # User login
-  │   │   ├── Signup.jsx         # User registration
-  │   │   ├── Dashboard.jsx       # User dashboard with trip overview
-  │   │   ├── CreateTrip.jsx    # Trip creation form
-  │   │   ├── MyTrips.jsx        # List of user's trips
-  │   │   ├── TripDetail.jsx     # Trip details with tabs
-  │   │   ├── ItineraryBuilder.jsx  # Add and manage city stops
-  │   │   ├── CitySearch.jsx     # Browse and search cities
-  │   │   ├── BudgetBreakdown.jsx   # Detailed budget view
-  │   │   ├── PackingChecklist.jsx   # Packing list management
-  │   │   ├── Notes.jsx          # Travel journal
-  │   │   ├── SharedTrip.jsx     # Public trip view
-  │   │   └── Profile.jsx         # User profile settings
-  │   ├── App.jsx                # Main application with routing
-  │   ├── main.jsx               # Application entry point
-  │   └── index.css              # Global styles and Tailwind
-  ├── package.json
-  ├── vite.config.js
-  ├── tailwind.config.js
-  ├── postcss.config.js
-  └── index.html
+```
+frontend/
+├── src/
+│   ├── lib/
+│   │   └── api.js              # API client with JWT authentication
+│   ├── hooks/
+│   │   └── useAuth.js          # Authentication state management
+│   ├── components/
+│   │   ├── Navbar.jsx         # Navigation component
+│   │   ├── Loading.jsx         # Loading spinners and skeleton loaders
+│   │   └── Toast.jsx           # Toast notification system
+│   ├── pages/
+│   │   ├── Home.jsx            # Landing page
+│   │   ├── Login.jsx           # User login
+│   │   ├── Signup.jsx         # User registration
+│   │   ├── Dashboard.jsx       # User dashboard with trip overview
+│   │   ├── CreateTrip.jsx    # Trip creation form
+│   │   ├── MyTrips.jsx        # List of user's trips
+│   │   ├── TripDetail.jsx     # Trip details with tabs
+│   │   ├── ItineraryBuilder.jsx  # Add and manage city stops
+│   │   ├── CitySearch.jsx     # Browse and search cities
+│   │   ├── BudgetBreakdown.jsx   # Detailed budget view
+│   │   ├── PackingChecklist.jsx   # Packing list management
+│   │   ├── Notes.jsx          # Travel journal
+│   │   ├── SharedTrip.jsx     # Public trip view
+│   │   └── Profile.jsx         # User profile settings
+│   ├── App.jsx                # Main application with routing
+│   ├── main.jsx               # Application entry point
+│   └── index.css              # Global styles and Tailwind
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+└── index.html
+```
 
-  Installation
+## Installation
 
-  Navigate to the frontend directory and install dependencies:
+Navigate to the frontend directory and install dependencies:
 
-  cd frontend
-  npm install
+```bash
+cd frontend
+npm install
+```
 
-  Configuration
+## Configuration
 
-  Create a .env file in the frontend directory to configure the API base URL:
+Create a .env file in the frontend directory to configure the API base URL:
 
-  VITE_API_URL=http://localhost:8000
+```
+VITE_API_URL=http://localhost:8000
+```
 
-  The default URL points to the local development server. Update this value when deploying to production.
+The default URL points to the local development server. Update this value when deploying to production.
 
-  Running the Development Server
+## Running the Development Server
 
-  cd frontend
-  npm run dev
+```bash
+cd frontend
+npm run dev
+```
 
-  The development server starts at http://localhost:5173 by default.
+The development server starts at http://localhost:5173 by default.
 
-  Building for Production
+## Building for Production
 
-  cd frontend
-  npm run build
+```bash
+cd frontend
+npm run build
+```
 
-  The production build is generated in the dist directory. This folder can be deployed to any static hosting service.
+The production build is generated in the dist directory. This folder can be deployed to any static hosting service.
 
-  Preview Production Build
+## Preview Production Build
 
-  To preview the production build locally:
+To preview the production build locally:
 
-  npm run preview
+```bash
+npm run preview
+```
 
-  Features
+## Features
 
-  The frontend provides a complete user interface for all TravelLoop features:
+The frontend provides a complete user interface for all TravelLoop features:
 
-  - User authentication with JWT tokens
-  - Trip creation and management
-  - Itinerary builder with city stops
-  - Budget tracking and cost breakdown
-  - Packing checklist with categories
-  - Travel journal with notes
-  - Public trip sharing
-  - User profile management
+- User authentication with JWT tokens
+- Trip creation and management
+- Itinerary builder with city stops
+- Budget tracking and cost breakdown
+- Packing checklist with categories
+- Travel journal with notes
+- Public trip sharing
+- User profile management
 
-  API Integration
+## API Integration
 
-  The frontend communicates with the backend API at endpoints prefixed with /api/. All authenticated requests include the JWT token in the Authorization
-  header. The frontend automatically handles token expiration and redirects users to the login page when authentication is required.
+The frontend communicates with the backend API at endpoints prefixed with /api/. All authenticated requests include the JWT token in the Authorization header. The frontend automatically handles token expiration and redirects users to the login page when authentication is required.
 
-  Browser Support
+## Browser Support
 
-  The application supports modern browsers including Chrome, Firefox, Safari, and Edge.
+The application supports modern browsers including Chrome, Firefox, Safari, and Edge.
 
 # Traveloop — Backend API
 
